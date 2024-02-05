@@ -28,7 +28,8 @@ console.log(upperCase);
 // Apply the find() method to find the first element in the colors array that starts 
 // with the letter 'b'.
 
-
+let y =colors.find(color => color.charAt(0)==="b")
+console.log(y);
 
 // Apply the slice() method to create a new array selectedColors containing 
 // the elements from index 1 to index 3 (inclusive) from the colors array.
