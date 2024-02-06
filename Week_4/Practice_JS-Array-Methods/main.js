@@ -15,7 +15,7 @@ console.log(colors);
 // Utilize the copyWithin() method to copy the elements from 
 // index 1 to index 3 within the colors array to index 0.
 
-let copyMethod=colors.copyWithin(3,1);
+let copyMethod=colors.copyWithin(0,1,3);
 console.log(copyMethod);
 
 // Finally, transform all elements of the colors array
