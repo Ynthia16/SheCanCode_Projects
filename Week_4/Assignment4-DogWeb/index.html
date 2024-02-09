@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="main.js"></script> -->
+    <title>Document</title>
+</head>
+<body>
+    <!-- this is the body of the webpages---- -->
+    <section class="whole">
+    <div class="wholebody" id="body">
+        <div>
+            <img src=""  class="image" id="img">
+        </div>
+        <div>
+           <button class="button" id="button">Get Dog</button>
+
+        </div>
+    </div>
+    </section>
+<script>
+
+const body= document.getElementById("body")
+const button= document.getElementById("button")
+const image= document.getElementsByClassName("image")
+const img = document.getElementById("img")
+button.addEventListener("click", () => {
+
+    fetch("https://random.dog/woof.json")
+    .then(response=> response.json())
+    .then(data =>{
+        // const image= document.getElementsByClassName("image")
+        // if ( image.){
+
+        // }
+        img.src=data.url 
+    })
+    .catch(error=>console.log(error))
+}
+)
+</script>
+</body>
+</html>
