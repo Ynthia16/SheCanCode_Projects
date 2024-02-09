@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="paragraph">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+             Repellat, illum amet eveniet quia blanditiis dolor impedit quis,
+              obcaecati repellendus, illo iste maiores totam beatae molestiae 
+              aut eaque ducimus expedita veniam?</p>
+
+    </div>
+    <div>
+        <button id="btn">Jesus</button>
+    </div>
+    <script>
+
+        const y= document.getElementById("paragraph")
+        const x= document.createElement("p")
+        x.textContent='hello darling'
+        y.appendChild(x)
+        console.log(x);
+    
+// ---the eventlistener----
+const m= [];
+const n= document.getElementById("btn")
+ const p= n.addEventListener("click", item=> m.push(item))
+
+console.log();
+console.log(m);
+console.log(m);
+    </script>
+</body>
+</html>
