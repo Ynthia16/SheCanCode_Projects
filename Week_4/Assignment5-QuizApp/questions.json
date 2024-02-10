@@ -1,0 +1,26 @@
+[
+    {
+      "question": "What is the capital of Japan?",
+      "options": [
+        {"text": "Tokyo", "correct": true},
+        {"text": "Seoul", "correct": false},
+        {"text": "Beijing", "correct": false}
+      ]
+    },
+    {
+      "question": "Who wrote 'The Great Gatsby'?",
+      "options": [
+        {"text": "F. Scott Fitzgerald", "correct": true},
+        {"text": "Ernest Hemingway", "correct": false},
+        {"text": "William Faulkner", "correct": false}
+      ]
+    },
+    {
+      "question": "What is the chemical symbol for water?",
+      "options": [
+        {"text": "H2O", "correct": true},
+        {"text": "CO2", "correct": false},
+        {"text": "NaCl", "correct": false}
+      ]
+    }
+  ]
