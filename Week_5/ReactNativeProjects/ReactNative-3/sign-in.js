@@ -145,7 +145,7 @@ const styles = StyleSheet.create({
     // backgroundColor:'green',
     padding:30,
     gap:15,
-    marginTop:30,
+    // marginTop:30,
     
   },
   headerTitle:{

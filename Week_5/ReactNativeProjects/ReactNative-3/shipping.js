@@ -12,7 +12,7 @@ import Feather from 'react-native-vector-icons/Feather';
 
 
 
-export default function Shipping() {
+export default function Shipping({navigation}) {
   return (
     <View style={styles.wholePage}>
         
@@ -81,7 +81,7 @@ export default function Shipping() {
         </View>
 
         <View>
-            <TouchableOpacity>
+            <TouchableOpacity onPress={() =>navigation.navigate('sign')}>
                 <Text style={styles.continue}>
                     Continue
                 </Text>
@@ -105,7 +105,7 @@ const styles = StyleSheet.create({
         borderColor:'#59B4C3',
         borderRadius:20,
         marginHorizontal:25,
-        marginTop:40,
+        // marginTop:40,
         paddingHorizontal:20,
         paddingTop:15,
     },
@@ -135,7 +135,7 @@ const styles = StyleSheet.create({
     paragraph:{
         borderTopWidth:1,
         borderTopColor:'yellow',
-        textAlign:'start',
+        textAlign:'left',
         paddingVertical:10,
     },
 
