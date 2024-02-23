@@ -1,0 +1,30 @@
+[
+    {
+        "name":"Features",
+        "key":"1"
+    },
+    {
+        "name":"Series",
+        "key":"2"
+    },
+    {
+        "name":"Films",
+        "key":"3"
+    },
+    {
+        "name":"Movies",
+        "key":"4"
+    },
+    {
+        "name":"Series",
+        "key":"5"
+    },
+    {
+        "name":"Series",
+        "key":"6"
+    },
+    {
+        "name":"Movies",
+        "key":"7"
+    }
+]
