@@ -1,0 +1,27 @@
+   [
+    {
+    "key":1,
+    "name":"All"
+    },
+
+    {
+      "key":2,
+      "name":"Man"
+    },
+    {
+      "key":3,
+      "name":"Woman"
+    },
+    {
+      "key":4,
+      "name":"Dress"
+    },
+    {
+      "key":5,
+      "name":"Skirts"
+    },
+    {
+      "key":6,
+      "name":"Pants"
+    }
+]
