@@ -14,8 +14,8 @@ export default function App() {
 
     <NavigationContainer>
       <Stack.Navigator>
-      <Stack.Screen name='shipping' component={Shipping} Options={{headerShown:'false'}}/>
-        <Stack.Screen name='sign' component={Sign} Options={{headerShown:'false'}}/>
+      <Stack.Screen name='shipping' component={Shipping} options={{headerShown:false}}/>
+        <Stack.Screen name='sign' component={Sign} options={{headerShown:false}}/>
         
       </Stack.Navigator>
     </NavigationContainer>

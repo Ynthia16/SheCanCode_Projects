@@ -1,18 +1,16 @@
-import React from 'react'
-import { StyleSheet, Text, View, Dimensions, SafeAreaView,ScrollView, FlatList,Image} from 'react-native';
-export default function Movies({title,image}) {
+import React , {useContext}from 'react'
+import { StyleSheet, Text, View, Pressable} from 'react-native';
+import { ChangeModeIntoWhite } from '../components/contextContainer.jsx';
+
+export default function Movies({text1,text2}) {
+  const {whiteMode,HandleModeChange}= useContext(ChangeModeIntoWhite)
   return (
-    <View>
-        <View >
-            <Text> {title}</Text>
-            <Image source={{uri:image}}></Image>
-        </View>
+
+    <View style={{display:'flex', flexDirection:'row', justifyContent:'space-between', alignItems:'center'}}>
+        <Text style={{fontSize:16, color:whiteMode? 'black':'#D7D9D6'}}>{text1}</Text>
+        <Pressable>
+        <Text  style={{fontSize:12, color:'grey'}}>{text2}</Text>
+        </Pressable>
     </View>
-  )
-}
-
-// the styling of the movies part 
-
-const styles=StyleSheet.create({
-
-})
+  ) 
+  }

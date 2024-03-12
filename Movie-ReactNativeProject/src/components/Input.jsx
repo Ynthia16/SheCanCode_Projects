@@ -1,9 +1,9 @@
 import React from 'react';
 import {StyleSheet,View,Text} from 'react-native';
-import { TextInput} from 'react-native-paper';
+import { TextInput,IconButton} from 'react-native-paper';
 // import React, { useState } from "react";
 
-export default function Input({label,mode,value,onChangeText,secureTextEntry,iconNameLeft,iconSize,placeholder,iconColor,iconNameRight,TextTitle, emailError}) {
+export default function Input({label,mode,value,onChangeText,secureTextEntry,iconNameLeft,iconSize,placeholder,iconColor,iconNameRight,TextTitle,onPress, emailError}) {
   return(
     <View style={styles.container}> 
     <View style={styles.textcontainer}>
@@ -29,6 +29,7 @@ export default function Input({label,mode,value,onChangeText,secureTextEntry,ico
       />}
 
       right={<TextInput.Icon 
+      onPress={onPress}
       icon={iconNameRight}
       size={iconSize}
       color={iconColor}
@@ -50,7 +51,9 @@ const styles=StyleSheet.create({
     underlineColor:'transparent',
     opacity:0.5,
     paddingVertical:0,
-    height:37
+    height:37,
+    backgroundColor:'#25262B',
+    borderColor:'#41464A'
     
   },
   textcontainer:{

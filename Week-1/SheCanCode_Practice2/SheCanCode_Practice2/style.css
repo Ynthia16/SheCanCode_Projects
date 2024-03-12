@@ -1,0 +1,60 @@
+*{
+  box-sizing: border-box;
+  /* ----why do we need to use box-sizing in the first place? can't i run my code smoothly without using box-sizing--- */
+  padding: 0%;
+  margin: 0%;
+}
+
+body{
+  background-color:#000000 ;
+}
+#top{
+ color: bisque;
+}
+#top h1{
+color: blueviolet;
+}
+button{
+  padding:15px 20px;
+  font-size: 100%;
+  border:0px;
+}
+#parent1{
+  background-color: brown;
+  width:100%;
+  display: flex;
+  /* flex-direction: column; this one helps in putting the direction of your flex. either row or column*/
+  justify-content: flex-start;
+  /* for the justify content it deals with an item but horizontally, whilee align items deal with the item vertically as in  */
+  padding:5px;
+  flex-wrap: wrap;  
+  /* --flex warp ifasha in the items not to shrink themselves to fit the parent space but they will keep their width and if the space ends they will go to the next line  */
+
+}
+.children{
+  background-color: blueviolet;
+  padding:20px 50px;
+  margin:20px;
+  border: 1px solid black;
+  width:15%;
+  /* --for measuremnts, it is better to use percentages not px */
+}
+
+
+
+/* ----Question: what is flex basis */
+
+/* we use media screens to define how we want our items to display on different screens-- and this is what we call Responsiveness  */
+@media (width > 768px){ 
+  #parent1{
+    background-color:cyan;
+
+  }
+  
+}
+@media (width < 480px){
+  .children{
+    width:100%;
+  }
+}
+/* ------for media querries , we have two methods that we use and you choose according to what works for you  */

@@ -1,0 +1,310 @@
+*{
+  padding: 0;
+  margin:0;
+  box-sizing: border-box;
+}
+.whole-webpage{
+  max-width:1500px;
+ margin:auto;
+}
+/* -------My heading part ------- */
+/* header{
+  position:fixed;
+} */
+
+.navbar{
+  display:flex;
+  justify-content: space-between;
+  top: 0;
+  position: fixed;
+  align-items: center;
+  width: 100%;
+  background-color: white;
+}
+.mail{
+  margin-right: 3px;
+}
+
+/* .navicon{
+  background-color: blue;
+  border: 3px solid black;
+  height:100px;
+  width: 25%;
+  gap:20%;
+} */
+/* -------the navigation bar ----- */
+.navicon a{
+  list-style: none;
+  text-decoration: none;
+  /* background-color: rgb(6, 56, 57); */
+  font-size: 25px;
+  color: black;
+}
+.navicon a:hover{
+  background-color: cadetblue;
+  transition-duration: 0.5s;
+}
+/* -------the body part of the webpage----- */
+/* .flexbox-1{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap:1px;
+   max-width: 100%;
+  margin-top: 60px;
+  width: 100%;
+  height: 60%;
+} */
+
+.flexbox-1{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+     max-width: 100%;
+    margin-top: 80px;
+    width: 100%;
+}
+.package{
+  width:20%;
+  margin-left: 3px;
+}
+.package img{
+  padding-top: 50px;
+  width:90%;
+}
+.packagewords{
+  text-align: center;
+  margin-top:7px;
+  font-size: 15px;
+  margin-bottom:7px;
+}
+.flexbox-2{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+   max-width: 100%;
+  margin-top: 10px;
+  width: 100%;
+}
+
+/* ------the third flexbox---- */
+.flexbox3-numbers{
+  display:flex;
+  justify-content: center;
+  margin-left: 5px;
+  gap: 5px;
+  margin-top: 5px;
+  margin-bottom: 6px;
+}
+.flexnumber:hover{
+  background-color: black;
+  color: whitesmoke;
+  transition:0.2s;
+  transform: none;
+  border: 8px solid black;
+
+}
+.flexnumber{
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+}
+.border{
+  margin-top: 5px;
+  border-top:1px solid  rgb(195, 188, 188);
+  margin-bottom: 10px;
+}
+/* -------the about me part of the webpage---- */
+.aboutme{
+  margin-top: 30px;
+text-align: center;
+margin-left: 3px;
+/* padding: 10%; */
+}
+.aboutme h2{
+  margin-bottom: 30px;
+  font-weight: 300;
+}
+.about_paragraph h2{
+  font-weight: 600;
+  margin-top: 10px;
+}
+.about_paragraph h3{
+  margin-bottom: 6px;
+  font-weight: 300;
+  font-style: italic;
+}
+.about_paragraph p{
+  font-size: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
+  
+}
+
+/* -------the last part of my webpage----- */
+
+.flexbox-4{
+  display:flex;
+  justify-content: space-between;
+  /* margin-left: 4px; */
+  flex-wrap: wrap;
+  max-width: 100%;
+  width:100%;
+  /* background-color: chartreuse; */
+
+}
+
+.item1{
+  /* background-color: blueviolet; */
+  width: 30%;
+  /* margin: 10px;
+  padding: 60px; */
+  margin-top: 30px;
+  margin-left: 20px;
+}
+.item2{
+  /* background-color: brown; */
+  width: 30%;
+  /* margin: 10px;
+  padding: 60px; */
+  margin-top: 30px;
+}
+.item3{
+  /* background-color: chocolate; */
+  width: 30%;
+  /* margin: 10px;
+  padding-top: 30px;
+  padding-left: 3px; */
+  margin-top: 30px;
+}
+.item1 h3{
+  padding-bottom: 20px;
+  font-size: 28px;
+}
+.item2 h3{
+  padding-bottom: 20px;
+  font-size: 28px;
+}
+.item3 h3{
+  padding-bottom: 40px;
+  font-size: 28px;
+}
+.item1 p{
+  text-align: justify;
+  font-size: 20px;
+}
+.item2 p{
+  text-align: justify;
+  font-size: 20px;
+}
+.powered {
+  padding-top: 10px;
+}
+.powered span{
+  text-decoration: underline;
+}
+.flexbox-5{
+  display:flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 10%;
+
+}
+.pic-background {
+  /* background-color: darkblue; */
+  /* width:50%; */
+  display:flex;
+  /* column-gap: 8px; */
+}
+.pic-background img{
+  width:100%;
+  padding:30px 0px 30px 30px;
+}
+.pic-background p{
+  font-size: 20px;
+  padding:15px;
+}
+.pic-background span{
+  font-weight: bold;
+}
+.pic-background :hover{
+  transition: 0.2s;
+  background-color: bisque;
+}
+
+/* -------the last flexbox in the footer part of my webpage-- */
+.flexbox-6{
+  display:flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap:10px;
+  /* width: 100%; */
+  /* column-count: 5; */
+  
+} 
+.back_ground{
+  background-color:rgb(114, 104, 104);
+  color: azure;
+  border: 5px solid rgb(114, 104, 104);
+}
+.travel{
+  background-color:black;
+  color: azure;
+  border: 5px solid black;
+}
+.border{
+  border-top:1px solid black;
+}
+/* ------My webpage responsiveness------ */
+
+@media (min-width:320px),(max-width:320px){
+.navbar{
+  width:100%;
+  /* background-color: blue; */
+}
+.package{
+  width:100%;
+  margin-left: 20px;
+}
+ .packagewords p{
+  font-size: 20px;
+  text-align: center;
+}
+  .aboutme img{
+    width:80%;
+  }
+  .item1{
+   width:85%;
+  }
+  .item2{
+    width:100%;
+  }
+  .item3{
+    width:100%;
+  }
+} 
+@media (min-width:768px){
+  .navbar{
+    width:100%;
+  }
+  .package{
+    width:50%;
+    margin:0px;
+    padding: 10px;
+    /* background-color: brown; */
+  }
+  .item1{
+    width:30%;
+  }
+  .item2{
+    width:30%;
+  }
+  .item3{
+    width:30%;
+  }
+}
+@media (min-width:1024px){
+  .package{
+    width:25%;
+  }
+}

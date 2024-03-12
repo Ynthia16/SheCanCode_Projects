@@ -1,12 +1,21 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import {StyleSheet,View,Text} from 'react-native';
+import { ChangeModeIntoWhite } from '../components/contextContainer.jsx';
 
 export default function HomeCate({text}) {
-    // const container=require('../JsonData/HomeCate.json')
+    const {whiteMode,HandleModeChange}= useContext(ChangeModeIntoWhite)
   return (
     <View>
         <View style={styles.textcontainer}>
-            <Text style={styles.text}> {text}</Text>
+            <Text style={{  color:whiteMode? 'black':'#D7D9D6',
+                            fontWeight:'300',
+                            borderWidth:2,
+                            borderColor: whiteMode? '#D7D9D6':'#333336',
+                            borderRadius:6,
+                            paddingHorizontal:10,
+                            paddingVertical:7,
+                            fontSize:15}}> {text}
+            </Text>
         </View>
     </View>
   )
