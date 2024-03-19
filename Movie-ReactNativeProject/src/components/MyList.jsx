@@ -12,7 +12,6 @@ export default function MyList({image, movieName, movieYear, movieCategory}) {
         <Text>{movieCategory}</Text>
         </View>
    
-
   </View>
   )
 }

@@ -1,6 +1,4 @@
 
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
@@ -27,7 +25,7 @@ export default function App() {
 
     <ThemeChangeModeIntoWhite>
       <NavigationContainer>
-       <Stack.Navigator initialRouteName='Home' screenOptions={{headerShown:false}}>
+       <Stack.Navigator initialRouteName='SignIn' screenOptions={{headerShown:false}}>
          <Stack.Screen name='Page2' component={Page2} />
          <Stack.Screen  name='Page3' component={Page3} /> 
          <Stack.Screen  name='Page4' component={Page4}  />

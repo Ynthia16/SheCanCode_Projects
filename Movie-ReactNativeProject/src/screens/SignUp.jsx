@@ -53,15 +53,6 @@ export default function SignUp({navigation}) {
       }else {
           setPasswordError('')
       }
-      if (phoneNumber.trim()==('')){
-        setphoneNumberError('Phone number is required!')
-        valid=false
-      }else if (!isValidphoneNumber(phoneNumber)){
-        setphoneNumberError('Phone Number is invalid')
-        valid=false
-      }else{
-        setphoneNumberError('')
-      }
       return valid 
       
      }
@@ -92,11 +83,11 @@ export default function SignUp({navigation}) {
             <Input TextTitle='Email Address' placeholder='email' iconNameLeft='email-outline' iconSize={20} value={email} onChangeText={setEmail} error={emailError}/>
                 <View>{emailError?<Text style={{color:'red', fontSize:11, paddingHorizontal:20,paddingBottom:7}}> {emailError}</Text>:null}</View>
             <Input TextTitle='Phone Number' placeholder='your password' iconNameLeft='phone-outline' iconSize={20}/>    
-            <Input TextTitle='Birth Date' placeholder='your password' iconNameLeft='calendar-range' iconSize={20}/>  
-            <Input TextTitle='Gender' placeholder='your gender' iconNameLeft='account' iconSize={20}/>  
+            {/* <Input TextTitle='Birth Date' placeholder='your password' iconNameLeft='calendar-range' iconSize={20}/>   */}
+            {/* <Input TextTitle='Gender' placeholder='your gender' iconNameLeft='account' iconSize={20}/>   */}
             <Input TextTitle='Password' placeholder='your password' iconNameLeft='lock-outline' iconSize={20}  value={password}  onChangeText={setPassword} error={passwordError}/> 
                 <View>{passwordError?<Text style={{color:'red', fontSize:11, paddingHorizontal:20,paddingBottom:7}}> {passwordError}</Text>:null}</View>   
-            <Input TextTitle=' Confirm Password' placeholder='your password' iconNameLeft='lock-outline' iconSize={20}/>        
+            {/* <Input TextTitle=' Confirm Password' placeholder='your password' iconNameLeft='lock-outline' iconSize={20}/>         */}
         </View>
 
         <View>
@@ -125,10 +116,10 @@ export default function SignUp({navigation}) {
 
 const styles=StyleSheet.create({
     button:{
-        paddingTop:7
+        paddingTop:20
     },
     inputs:{
-      paddingTop:7,   
+      paddingTop:20,   
     },
    
     textContainer1:{

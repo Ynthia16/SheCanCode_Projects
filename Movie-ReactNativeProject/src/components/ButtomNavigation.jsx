@@ -29,7 +29,7 @@ export default function ButtomNavigation() {
     }
 
   return (
-    <Tab.Navigator initialRouteName='DrawerNavigation' screenOptions={{tabBarShowLabel:false,tabBarStyle:{backgroundColor:'#1f2123',position:'absolute',display:'flex', justifyContent:'space-between',alignItems:'center', borderTopWidth:0}}}>
+    <Tab.Navigator initialRouteName='HomeScreen' screenOptions={{tabBarShowLabel:false,tabBarStyle:{backgroundColor:'#1f2123',position:'absolute',display:'flex', justifyContent:'space-between',alignItems:'center', borderTopWidth:0}}}>
         <Tab.Screen name='HomeScreen' component={TopNavigation}  options={{
           headerStyle:{backgroundColor: whiteMode? '#ffffff':'#1f2123', height:70},
           headerTitle:'',
